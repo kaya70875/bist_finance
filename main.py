@@ -14,7 +14,7 @@ def main():
     args = parser.parse_args()
 
     driver = setup_driver()
-    choose_pair(driver , pair_name=args.pair , year=args.year , month=args.month , day='02')
+    choose_pair(driver , pair_name=args.pair , year=args.year , month=args.month)
 
     download_path = get_download_path()
     df = get_excel(driver , download_path)

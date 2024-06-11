@@ -32,6 +32,7 @@ def choose_pair(driver,  pair_name , year , month):
     # Select Year
     while True:
         select_year = Select(WebDriverWait(driver, config.WEB_WAIT).until(EC.element_to_be_clickable((By.CLASS_NAME, 'picker__select--year'))))
+        time.sleep(config.WEB_WAIT_EX)
         options = select_year.options
         if year in [option.text for option in options]:
             select_year.select_by_visible_text(year)
@@ -56,6 +57,8 @@ def choose_pair(driver,  pair_name , year , month):
     )).click()
 
     # Wait and download the file
+    element = WebDriverWait(driver, config.WEB_WAIT).until(EC.element_to_be_clickable((By.CLASS_NAME, 'excelimage')))
+    WebDriverWait(driver , config.WEB_WAIT).until(EC.visibility_of(element))
     time.sleep(config.WEB_WAIT_EX)
-    WebDriverWait(driver, config.WEB_WAIT).until(EC.element_to_be_clickable((By.CLASS_NAME, 'excelimage'))).click()
+    element.click()
     time.sleep(10)

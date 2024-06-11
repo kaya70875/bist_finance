@@ -6,28 +6,23 @@ Prerequisites
 Ensure you have the following installed:
 
     Python 3.x
-    Necessary Python packages (listed in requirements.txt if available)
+    Necessary Python packages (listed in requirements.txt)
 
 Installation
 
     Clone the repository:
 
-    sh
+git clone https://github.com/kaya70875/bist_finance
 
-git clone <repository_url>
-cd <repository_directory>
+cd bist_finance
 
 Install the required packages:
-
-sh
 
     pip install -r requirements.txt
 
 Usage
 
 Run the script from the command line with the required arguments:
-
-sh
 
 python main.py -p <pair_name> -P <download_path> [-y <year>] [-m <month>]
 
@@ -40,6 +35,6 @@ Arguments
 
 Example
 
-python script_name.py -p AKBNK -P ~/Downloads -y 2021 -m Mart
+python main.py -p AKBNK -P ~/Downloads -y 2021 -m Mart
 
 This command will download historical data for the AKBNK stock pair, starting from March 2021, and save the resulting CSV file in the ~/Downloads directory.

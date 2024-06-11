@@ -1,5 +1,6 @@
 import time
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -14,7 +15,8 @@ def setup_driver():
     if config.USER_AGENT != '':
         options.add_argument(f'user-agent={config.USER_AGENT}')
     options.add_argument(config.HEADLESS)
-    driver = webdriver.Chrome(executable_path = ChromeDriverManager().install(),options=options)
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
     return driver
 
 def choose_pair(driver,  pair_name , year , month):

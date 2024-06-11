@@ -12,22 +12,16 @@ Installation
 
     Clone the repository:
 
-    sh
-
-git clone <repository_url>
-cd <repository_directory>
+git clone <https://github.com/kaya70875/bist_finance>
+cd bist_finance
 
 Install the required packages:
-
-sh
 
     pip install -r requirements.txt
 
 Usage
 
 Run the script from the command line with the required arguments:
-
-sh
 
 python main.py -p <pair_name> -P <download_path> [-y <year>] [-m <month>]
 

@@ -6,7 +6,7 @@ Prerequisites
 Ensure you have the following installed:
 
     Python 3.x
-    Necessary Python packages (listed in requirements.txt if available)
+    Necessary Python packages (listed in requirements.txt)
 
 Installation
 

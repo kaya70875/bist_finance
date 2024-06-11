@@ -35,6 +35,6 @@ Arguments
 
 Example
 
-python script_name.py -p AKBNK -P ~/Downloads -y 2021 -m Mart
+python main.py -p AKBNK -P ~/Downloads -y 2021 -m Mart
 
 This command will download historical data for the AKBNK stock pair, starting from March 2021, and save the resulting CSV file in the ~/Downloads directory.

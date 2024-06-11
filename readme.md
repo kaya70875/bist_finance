@@ -12,7 +12,8 @@ Installation
 
     Clone the repository:
 
-git clone <https://github.com/kaya70875/bist_finance>
+git clone https://github.com/kaya70875/bist_finance
+
 cd bist_finance
 
 Install the required packages:
